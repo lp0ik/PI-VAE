@@ -163,7 +163,7 @@ if __name__ == "__main__":
         time_history.append(time_stop-time_start)
     
     # torch.save(model, './results/special_case/f_high/model_fhigh.pkl')
-    torch.save(model, r'./trained_model/SDE/model_{}_u={}_k={}_f={}_datasize={}_z={}.pkl'.format(args.case, args.u_sensor, args.k_sensor, args.f_sensor, args.data_size, args.latent_dim))
+    torch.save(model, r'./kaggle/working/PI-VAE/trained_model/SDE/model_{}_u={}_k={}_f={}_datasize={}_z={}.pkl'.format(args.case, args.u_sensor, args.k_sensor, args.f_sensor, args.data_size, args.latent_dim))
 
 
     print("\nГенерация предсказаний k_pred, u_pred, f_pred...")
