@@ -163,9 +163,9 @@ if __name__ == "__main__":
         time_history.append(time_stop-time_start)
     
     # torch.save(model, './results/special_case/f_high/model_fhigh.pkl')
-    torch.save(model, r'./kaggle/working/PI-VAE/trained_model/SDE/model_{}_u={}_k={}_f={}_datasize={}_z={}.pkl'.format(args.case, args.u_sensor, args.k_sensor, args.f_sensor, args.data_size, args.latent_dim))
+    torch.save(model, r'./kaggle/working/PI-VAE/examples/trained_model/model_{}_u={}_k={}_f={}_datasize={}_z={}.pkl'.format(args.case, args.u_sensor, args.k_sensor, args.f_sensor, args.data_size, args.latent_dim))
 
-
+'''
     print("\nГенерация предсказаний k_pred, u_pred, f_pred...")
     model.eval()
     with torch.no_grad():
@@ -275,7 +275,7 @@ if __name__ == "__main__":
     SDE_visual(k_pred, k_data, title_prefix="Coefficient k(x)")
     SDE_visual(u_pred, u_data, title_prefix="Solution u(x)")
     SDE_visual(f_pred, f_data, title_prefix="Forcing term f(x)")
-
+'''
 
 
 
